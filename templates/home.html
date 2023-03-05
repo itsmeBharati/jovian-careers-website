@@ -11,18 +11,30 @@
         height: 360px;
         width:100% ;
         object-fit:cover;
+        margin-bottom:16px
+        
       }
 
       </style>
     
   </head>
+  
   <body>
+    {% include 'nav.html' %}
+    <img class= "img-fluid" id="banner" src="https://jovian-careers-website.bharati1996s.repl.co/static/banner%20img.jpg" height="320">
     <div class="container">
     <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-    <img class= "img-fluid" id="banner" src="https://jovian-careers-website.bharati1996s.repl.co/static/banner%20img.jpg" height="320">
+    
+    
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
     <h2 class="text-center mt-2 mb-4">About Jovian </h2>
     <p class="lead" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </p>
+</div>
+<div class="d-none d-md-block col-6">        
+<img src="https://replit.com/@bharati1996s/jovian-careers-website#static/GC4.jpg" style="height:320px;">
+</div>        
 
     <h2 class="text-center mt-2 mb-4">Job Openings </h2>
    
@@ -31,11 +43,13 @@
       {% endfor %}
     
     
-      <button class="btn btn-primary btn-lg" >Contact Us</button>
+<a class="btn btn-primary btn-lg" href="mailto:swayam1696@gmail.com?subject=Question%20about%20Job%20Openings&body=My%20Name%3A%3CYour%20name%20here%20%3E%0D%0AMy%20Question%3A%3CEnter%20quesion%20here%20%3E%0D%0A">Contact Us</a>
       <p>Copyright 2022, Jovian</p>
       
     
     </div>
+
+      {% include 'footer.html' %}
   </body>
   
 
